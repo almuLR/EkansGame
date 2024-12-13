@@ -24,17 +24,17 @@ public class LoadingScreen extends Screen {
         Assetes.preparado = g.newPixmap("preparado.png", PixmapFormat.ARGB4444);
         Assetes.menupausa = g.newPixmap("menupausa.png", PixmapFormat.ARGB4444);
         Assetes.finjuego = g.newPixmap("finjuego.png", PixmapFormat.ARGB4444);
-        Assetes.ocasoballarriba = g.newPixmap("barcoarriba.png", PixmapFormat.ARGB4444);
-        Assetes.ocasoballizquierda = g.newPixmap("barcoizquierda.png", PixmapFormat.ARGB4444);
-        Assetes.ocasoballabajo = g.newPixmap("barcoabajo.png", PixmapFormat.ARGB4444);
-        Assetes.ocasoballderecha = g.newPixmap("barcoderecha.png", PixmapFormat.ARGB4444);
-        Assetes.nestballabajo = g.newPixmap("tripulacion.png", PixmapFormat.ARGB4444);
-        Assetes.bulbasur = g.newPixmap("botin1.png", PixmapFormat.ARGB4444);
-        Assetes.charmander = g.newPixmap("botin2.png", PixmapFormat.ARGB4444);
-        Assetes.squirtel = g.newPixmap("botin3.png", PixmapFormat.ARGB4444);
-        Assetes.pulsar = game.getAudio().nuevoSound("pulsar.ogg");
-        Assetes.ataque = game.getAudio().nuevoSound("ataque.ogg");
-        Assetes.derrota = game.getAudio().nuevoSound("derrota.ogg");
+        Assetes.ocasoballarriba = g.newPixmap("ocasoballarriba.png", PixmapFormat.ARGB4444);
+        Assetes.ocasoballizquierda = g.newPixmap("ocasoballizquierda.png", PixmapFormat.ARGB4444);
+        Assetes.ocasoballabajo = g.newPixmap("ocasoballabajo.png", PixmapFormat.ARGB4444);
+        Assetes.ocasoballderecha = g.newPixmap("ocasoballderecha.png", PixmapFormat.ARGB4444);
+        Assetes.nestballabajo = g.newPixmap("nestballabajo.png", PixmapFormat.ARGB4444);
+        Assetes.bulbasur = g.newPixmap("bulbasur.png", PixmapFormat.ARGB4444);
+        Assetes.charmander = g.newPixmap("charmander.png", PixmapFormat.ARGB4444);
+        Assetes.squirtel = g.newPixmap("squirtel.png", PixmapFormat.ARGB4444);
+        Assetes.pulsar = game.getAudio().nuevoSound("pulsar.mp3");
+        Assetes.ataque = game.getAudio().nuevoSound("ataque.mp3");
+        Assetes.derrota = game.getAudio().nuevoSound("derrota.mp3");
 
 
         Configurations.cargar(game.getFileIO());
