@@ -3,7 +3,6 @@ package com.example.ekansgame.game;
 import com.example.ekansgame.Game;
 import com.example.ekansgame.Grafics;
 import com.example.ekansgame.Screen;
-import com.example.ekansgame.Grafics.PixmapFormat;
 import com.example.ekansgame.Input.TouchEvent;
 
 import java.util.List;

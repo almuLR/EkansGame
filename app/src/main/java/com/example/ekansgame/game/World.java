@@ -64,14 +64,31 @@ public class World {
         while (tiempoTick > tick) {
             tiempoTick -= tick;
             kantos.avance();
+
+            Pokeball head = kantos.partes.get(0);
+            if (head.x < 0 || head.x >= MUNDO_ANCHO || head.y < 0 || head.y >= MUNDO_ALTO){
+                finalJuego = true;
+                return;
+            }
+
             if (kantos.comprobarChoque()) {
                 finalJuego = true;
                 return;
             }
 
-            Pokeball head = kantos.partes.get(0);
             if (head.x == pokemon.x && head.y == pokemon.y) {
-                puntuacion += INCREMENTO_PUNTUACION;
+                //puntuacion += INCREMENTO_PUNTUACION;
+                switch (pokemon.tipo) {
+                    case 0: // Bulbasur
+                        puntuacion += 10;
+                        break;
+                    case 1: // Charmander
+                        puntuacion += 20;
+                        break;
+                    case 2: // Squirtel
+                        puntuacion += 30;
+                        break;
+                }
                 kantos.capturar();
                 if (kantos.partes.size() == MUNDO_ANCHO * MUNDO_ALTO) {
                     finalJuego = true;

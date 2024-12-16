@@ -56,14 +56,14 @@ public class Kantos {
         if(direccion == DERECHA)
             ekans.x += 1;
 
-        if(ekans.x < 0)
+        /*if(ekans.x < 0)
             ekans.x = 9;
         if(ekans.x > 9)
             ekans.x = 0;
         if(ekans.y < 0)
             ekans.y = 12;
         if(ekans.y > 12)
-            ekans.y = 0;
+            ekans.y = 0;*/
     }
 
     public boolean comprobarChoque() {
